@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #005fff;
+    --primary-color: #4a87cc9a;
     --primary-color-alpha: #005fff1a;
   }
   
@@ -18,6 +18,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: row;
+    
   }
   
   .auth__form-container_fields {
@@ -27,7 +28,8 @@
     justify-content: center;
   
     padding: 2rem;
-    background: #005fff;
+    background: #DCF3FF
+   
   }
   
   .auth__form-container_image {
@@ -48,16 +50,17 @@
   
     padding: 2rem;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
-    border-radius: 5px;
+    border-radius: 60px;
     transition: 0.8s ease;
     background: #fff;
   }
   
   .auth__form-container_fields-content p {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #05245a;
-    font-weight: 900;
+    color: #1f4381;
+    font-weight: 1000;
+
   }
   
   .auth__form-container_fields-content_input {
@@ -80,7 +83,7 @@
   .auth__form-container_fields-content_input input {
     padding: 0.55rem 0.4rem;
     border: 1px solid rgb(184, 196, 194);
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 14px;
     outline: none;
     transition: all 150ms ease-in-out 0s;
@@ -119,7 +122,7 @@
   }
   
   .auth__form-container_fields-content_button button {
-    border-radius: 4px;
+    border-radius: 15px;
     background: #005fff;
     border: 1px solid #005fff;
     color: #fff;
@@ -129,6 +132,7 @@
     outline: none;
     cursor: pointer;
     transition: 0.3s ease;
+    
   }
   
   .auth__form-container_fields-content_button button:hover {
@@ -225,7 +229,7 @@
   }
   
   @media screen and (max-width: 960px) {
-    .str-chat-channel-list.team.light {
+    .str-chat-channel-list.team {
       position: unset;
       left: unset;
       top: unset;
@@ -368,6 +372,7 @@
     /* height: 800px; */
     height: 100%;
     box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
+  
   }
   
   .channel-list__sidebar {
@@ -375,8 +380,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       var(--primary-color);
     box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
-    /* border-top-left-radius: 16px; */
-    /* border-bottom-left-radius: 16px; */
+    
   }
   
   .channel-list__sidebar__icon1 {
@@ -398,6 +402,10 @@
     flex-direction: column;
     background: var(--primary-color);
     width: 240px;
+    padding-left:20px;
+    padding-right: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
   
   .icon1__inner {
@@ -413,9 +421,9 @@
     height: 44px;
     margin: 14px;
     background: linear-gradient(
-        150.64deg,
+        5.64deg,
         rgba(0, 0, 0, 0.1) 12.73%,
-        rgba(0, 0, 0, 0) 89.32%
+        rgba(0, 0, 0, 0) 30.32%
       ),
       #ffffff;
     border-radius: 9999px;
@@ -440,9 +448,10 @@
     font-family: Helvetica Neue, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 28px;
-    color: #ffffff;
+    color: #000000;
+
   }
   
   .channel-search__container {
@@ -461,7 +470,7 @@
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     border: 1px solid transparent;
     width: 95%;
   }
@@ -474,6 +483,7 @@
     width: 32px;
     display: flex;
     justify-content: center;
+    padding-left: 10px;
   }
   
   .channel-search__input__text {
@@ -481,7 +491,7 @@
     border: none;
     color: #fff;
     font-family: Helvetica Neue, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
   }
   
@@ -962,10 +972,11 @@
   
   .team-channel-list__header__title {
     font-family: Helvetica Neue, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 700;
     line-height: 16px;
     height: 16px;
-    color: rgba(255, 255, 255, 0.66);
+    color: #21273b;
     margin-bottom: 10px;
   }
   
@@ -979,9 +990,8 @@
     height: auto;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    background: rgba(255, 255, 255, 0.315);
+    border-radius: 20px;
     font-weight: bold;
     margin-right: 16px;
     cursor: pointer;
@@ -1733,7 +1743,7 @@
   
   .str-chat__input-flat {
     width: 100%;
-    padding: 10px;
+    padding: 40px;
   }
   
   @media screen and (max-width: 960px) {
@@ -1784,7 +1794,9 @@
     }
   
     .channel-search__input__wrapper {
-      width: 90%;
+      width: 100%;.textarea {
+        color : red
+      }
       padding-left: 10px;
       justify-content: flex-start;
     }
@@ -1825,3 +1837,13 @@
     }
   }
   
+  .str-chat__input-flat .str-chat__textarea > textarea {
+    min-height: 56px;
+    background: rgba(0, 0, 0, 0.089);
+    border-radius: var(--border-radius-md);
+    padding: 20px 69px;
+    font-size: var(--lg-font);
+    line-height: 17px;
+    border: none;
+    margin: 0;
+}
